@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text.DefaultStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+    </style>
+    <style name="LinearLayout.InfoContainer" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/container_info</item>
+    </style>
+    <style name="Text.InfoTitleStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textColor">@color/info_title</item>
+    </style>
+    <style name="Text.InfoTextStyle" parent="Text.DefaultStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="Button.DefaultActiveStyle" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/selector_button</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/button_active_text</item>
+    </style>
+    <style name="Button.DefaultInactiveStyle" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/selector_button</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/button_inactive_text</item>
+    </style>
+</resources>

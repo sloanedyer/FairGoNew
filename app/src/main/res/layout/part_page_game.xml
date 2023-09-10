@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@drawable/background_landscape">
+
+    <ImageButton
+        android:id="@+id/button_home"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/ripple_home_button"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/button_home_descrpt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_home" />
+
+    <ImageView
+        android:layout_width="183dp"
+        android:layout_height="299dp"
+        android:layout_marginStart="133dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/koala" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/LinearLayout.InfoContainer"
+        android:layout_width="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            style="@style/Text.InfoTitleStyle"
+            android:text="@string/text_balance" />
+
+        <TextView
+            android:id="@+id/text_balance"
+            style="@style/Text.InfoTextStyle"
+            tools:text="1200" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        style="@style/LinearLayout.InfoContainer"
+        android:layout_width="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout">
+
+        <TextView
+            style="@style/Text.InfoTitleStyle"
+            android:text="@string/text_win" />
+
+        <TextView
+            android:id="@+id/text_win"
+            style="@style/Text.InfoTextStyle"
+            tools:text="4290" />
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/button_spin"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/increase_value_descript"
+        android:foreground="@drawable/ripple_rouded_button"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4"
+        app:srcCompat="@drawable/button_spin" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        style="@style/LinearLayout.InfoContainer"
+        android:layout_width="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout3">
+
+        <TextView
+            style="@style/Text.InfoTitleStyle"
+            android:text="@string/text_bet" />
+
+        <TextView
+            android:id="@+id/text_bet"
+            style="@style/Text.InfoTextStyle"
+            tools:text="20" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        style="@style/LinearLayout.InfoContainer"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageButton
+            android:id="@+id/button_decreaseValue"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/ripple_rouded_button"
+            android:contentDescription="@string/decrease_value_descript"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/button_decrease_value" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                style="@style/Text.InfoTitleStyle"
+                android:text="@string/text_value" />
+            <TextView
+                android:id="@+id/text_value"
+                style="@style/Text.InfoTextStyle"
+                tools:text="20" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/button_increaseValue"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/ripple_rouded_button"
+            android:contentDescription="@string/increase_value_descript"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/button_increase_value" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

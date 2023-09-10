@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FairGoNew.One" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="Base.Theme.FairGoNew.Two" parent="Base.Theme.FairGoNew.One">
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    <style name="Base.Theme.FairGoNew.Three" parent="Base.Theme.FairGoNew.Two">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    
+    <style name="Base.Theme.FairGoNew.Last" parent="Base.Theme.FairGoNew.One">
+    </style>
+
+    <style name="Theme.FairGoNew" parent="Base.Theme.FairGoNew.Last" />
+</resources>

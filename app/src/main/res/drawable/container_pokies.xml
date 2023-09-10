@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:color="@color/border_info" android:width="3dp" />
+    <corners android:radius="8dp"/>
+    <padding
+        android:bottom="@dimen/padding_pokies"
+        android:left="@dimen/padding_pokies"
+        android:right="@dimen/padding_pokies"
+        android:top="@dimen/padding_pokies"/>
+    <solid android:color="@color/background_info"/>
+</shape>

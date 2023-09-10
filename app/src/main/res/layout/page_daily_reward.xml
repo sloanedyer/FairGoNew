@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_landscape">
+
+    <ImageButton
+        android:id="@+id/button_home"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/ripple_home_button"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/button_home_descrpt"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_home" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Text.DefaultStyle"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/info_daily_reward"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_home" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:background="@drawable/container_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            style="@style/Text.InfoTitleStyle"
+            android:text="@string/timer"/>
+        <TextView
+            android:id="@+id/text_timeLeft"
+            style="@style/Text.InfoTextStyle"
+            tools:text="23:59:47"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="228dp"
+        android:layout_height="224dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_getReward"
+        app:layout_constraintEnd_toEndOf="@+id/button_getReward"
+        app:layout_constraintStart_toStartOf="@+id/button_getReward"
+        app:srcCompat="@drawable/dailybox"
+        android:contentDescription="@string/daily_box_descript" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_getReward"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="32dp"
+        style="@style/Button.DefaultInactiveStyle"
+        android:enabled="false"
+        android:text="@string/button_get_reward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

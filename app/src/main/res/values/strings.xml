@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FairGoNew</string>
+    <string name="synchronization_bar_descript">Synchronization bar</string>
+    <string name="button_play_pokies">PLAY POKIES</string>
+    <string name="button_play_roulette">PLAY ROULETTE</string>
+    <string name="button_daily_reward">DAILY REWARD</string>
+    <string name="button_privacy_policy">PRIVACY POLICY</string>
+    <string name="privacy_policy">PRIVACY POLICY</string>
+    <string name="text_privacy_policy">TEXT</string>
+    <string name="button_home_descrpt">Go home</string>
+    <string name="info_daily_reward">EVERY 24 HOURS, GET 200 COINS FOR VISITING THE GAME. QUICKLY CLICK ON THE \"GET\" BUTTON</string>
+    <string name="timer">TIMER</string>
+    <string name="button_get_reward">GET REWARD</string>
+    <string name="daily_box_descript">Daily box</string>
+    <string name="text_balance">BALANCE</string>
+    <string name="text_win">WIN</string>
+    <string name="text_bet">BET</string>
+    <string name="text_value">VALUE</string>
+    <string name="decrease_value_descript">Decrease value</string>
+    <string name="increase_value_descript">Increase value</string>
+    <string name="text_time_left">%02d:%02d:%02d</string>
+</resources>
