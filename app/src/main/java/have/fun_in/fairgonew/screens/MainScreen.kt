@@ -18,7 +18,7 @@ import java.io.FileNotFoundException
 class MainScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val urlFromFile = ""
+        val urlFromFile = savedFileData[FILE_URL]
         if(!urlFromFile.isNullOrEmpty()) {
             val intentWebGame = Intent(this, WebGameScreen::class.java)
             startActivity(intentWebGame)
