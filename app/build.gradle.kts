@@ -1,16 +1,20 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    // Kapt
     kotlin("kapt")
+    // Kotlin serialization
     kotlin("plugin.serialization") version "1.9.0"
+    // Google services
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "have.fun_in.fairgonew"
+    namespace = "com.koalasgamefair.goplay"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "have.fun_in.fairgonew"
+        applicationId = "com.koalasgamefair.goplay"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -56,4 +60,10 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     //Kotlin serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    //OneSignal
+    implementation("com.onesignal:OneSignal:[5.0.0, 5.99.99]")
+    //Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:32.2.3"))
+    //Firebase Analytics
+    implementation("com.google.firebase:firebase-analytics-ktx")
 }

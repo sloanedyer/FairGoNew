@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "493378143114",
+    "project_id": "fair-go-koala-games",
+    "storage_bucket": "fair-go-koala-games.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493378143114:android:72ad8fe73a50ba7105be73",
+        "android_client_info": {
+          "package_name": "com.koalasgamefair.goplay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChnI6uUL2APFfD8Wf_Rnc9Lt1YBf0Dq4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
